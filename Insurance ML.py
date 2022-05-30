@@ -113,7 +113,7 @@ insurance_encode = pd.get_dummies(data = insurance, prefix = 'DVT', prefix_sep='
                columns = categorical_columns,
                drop_first =True,
               dtype='int8')
-# Lets verify the dummay variable process
+# verifying dummy variable
 print('Columns in original data frame:\n',insurance.columns.values)
 print('\nNumber of rows and columns in the dataset:',insurance.shape)
 print('\nColumns in data frame after encoding the dummy variable trap:\n',insurance_encode.columns.values)
